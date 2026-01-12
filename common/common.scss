@@ -39,7 +39,8 @@ body {
 }
 
 code > * {
-  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", Menlo, Monaco, Consolas, monospace;
+  font-family: ui-monospace, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono",
+    Menlo, Monaco, Consolas, monospace;
 }
 
 a {
@@ -1246,7 +1247,7 @@ div.edit-category .edit-category-title-bar {
   color: var(--seqera-black, #160f26);
 }
 .select-kit.combo-box.tag-drop .tag-drop-header {
-  border-color: #160f26!important;
+  border-color: #160f26 !important;
 }
 /* Group */
 .groups-boxes .group-box {
@@ -1717,23 +1718,22 @@ html.mobile-view {
     background-color: var(--seqera-black);
   }
 }
-  @media (max-width: 1450px) and (min-width: 768px)  {
-    #main-outlet-wrapper,
-    .search-banner {
-      margin: 0px 40px;
-      justify-content: center;      
-      width: calc(100% - 80px);
-    }
+@media (max-width: 1450px) and (min-width: 768px) {
+  #main-outlet-wrapper,
+  .search-banner {
+    margin: 0px 40px;
+    justify-content: center;
+    width: calc(100% - 80px);
   }
-  @media (max-width: 768px) {
-    #main-outlet-wrapper,
-    .custom-search-banner-wrap {
-      padding-left: 16px;
-      padding-right: 16px;
-    }
+}
+@media (max-width: 768px) {
+  #main-outlet-wrapper,
+  .custom-search-banner-wrap {
+    padding-left: 16px;
+    padding-right: 16px;
   }
+}
 
-  
 .header-buttons .auth-buttons .btn-icon-text {
   border-radius: 30px;
   border: 1px solid #160f26;
@@ -1759,3 +1759,31 @@ html.mobile-view {
 }
 
 @import "components/clean-user-card";
+
+/* Login form - OIDC/Seqera Platform button customization */
+#login-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Move Seqera button to top */
+#login-buttons .btn-social.oidc {
+  order: -1;
+}
+
+/* Custom Seqera icon for OIDC login button only */
+#login-buttons .btn-social.oidc .d-icon {
+  display: none;
+}
+
+#login-buttons .btn-social.oidc::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5em;
+  background-image: url($seqera_icon);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

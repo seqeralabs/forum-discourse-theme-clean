@@ -8,7 +8,8 @@
   "minimum_discourse_version": "3.0.0",
   "maximum_discourse_version": null,
   "assets": {
-    "icons-sprite": "/assets/icons.svg"
+    "icons-sprite": "/assets/icons.svg",
+    "seqera_icon": "/assets/seqera_icon.svg"
   },
   "color_schemes": {
   },
