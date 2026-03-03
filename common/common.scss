@@ -15,9 +15,11 @@
   --base-font: "Inter";
   --heading-font: "Degular";
   --color-brand: #31C9AC;
+
   --grey-neutral-white: #fff;
   --primary-300: #86E0CE;
   --tertiary-low: #e2f7f3;
+  ----tertiary: #31C9AC;
   --tertiary-800: #087f68;
   --d-sidebar-suffix: #31C9AC;
   --seqera-black: #201637;
@@ -1801,4 +1803,16 @@ html.mobile-view {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.btn-primary .d-icon {
+    color: vvar(--seqera-brand-dark);
+}
+
+.sidebar-section-link-content-badge.icon.unread svg {
+    color: var(--seqera-brand-green);
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link:focus-visible .sidebar-section-link-suffix.icon.unread svg, .sidebar-section-link-wrapper .sidebar-section-link:hover .sidebar-section-link-suffix.icon.unread svg {
+    color: var(--seqera-deep-green);
 }
