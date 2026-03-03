@@ -577,7 +577,7 @@ input:hover,
   justify-content: right;
 }
 .header-dropdown-toggle.chat-header-icon .icon .chat-channel-unread-indicator {
-  background: #4256e7;
+  background: var(--seqera-brand-green);
 }
 
 @media (max-width: 500px) {
@@ -927,7 +927,7 @@ nav.post-controls .actions .double-button button:last-child {
   .sidebar-section-link
   .sidebar-section-link-suffix.icon.unread
   svg {
-  color: var(--functional-blue-6-primary, #4256e7);
+  color: var(--seqera-brand-green);
 }
 .sidebar-section-link-wrapper .sidebar-section-link.active {
   background-color: #e8e7e9;
@@ -1007,16 +1007,16 @@ tbody {
   font-weight: 400;
 }
 .topic-list .topic-list-item-separator .topic-list-data {
-  border-top: 1px solid #4256e7;
+  border-top: 1px solid var(--seqera-brand-green);
 }
 .small-action.topic-post-visited .topic-post-visited-line {
-  border-bottom: 1px solid #4256e7;
+  border-bottom: 1px solid var(--seqera-brand-green);
 }
 .topic-list .topic-list-item-separator .topic-list-data span,
 .small-action.topic-post-visited
   .topic-post-visited-line
   .topic-post-visited-message {
-  color: #4256e7;
+  color: var(--seqera-deep-green);
 }
 .timeline-container .timeline-controls .btn.btn-icon,
 .timeline-footer-controls button {
@@ -1039,10 +1039,11 @@ tbody {
 .discourse-no-touch .btn-primary {
   border: 1px solid transparent;
   border-radius: 4px;
-  background: var(--functional-blue-6-primary, #4256e7);
+  background: var(--seqera-brand-green);
+  color: var(--seqera-brand-dark);
   &:hover {
-    background: var(--functional-blue-9-hovered, #2c3999);
-    color: #fff;
+    background: #0CAE8E;
+     color: var(--seqera-brand-dark);
   }
   & .d-icon.d-icon-plus {
     display: none;
@@ -1405,7 +1406,7 @@ div.edit-category .edit-category-nav .nav-stacked,
   font-weight: 600;
 }
 .footer-message h3 a {
-  color: var(--functional-blue-6-primary, #4256e7);
+  color: var(--seqera-deep-green);
 }
 
 .btn.btn-danger.btn-icon:not(:hover) {
@@ -1447,10 +1448,10 @@ div.edit-category .edit-category-nav .nav-stacked,
 .c-footer__item .c-unread-indicator,
 .user-menu.revamped .tabs-list .btn .badge-notification,
 .chat-channel-row .chat-channel__metadata .chat-channel-unread-indicator {
-  background-color: #4256e7 !important;
+  background-color: var(--seqera-brand-green)!important;
 }
 .post-info.post-date .read-state {
-  color: #4256e7 !important;
+  color: var(--seqera-deep-green) !important;
 }
 
 .user-menu .quick-access-panel li.unread,
@@ -1482,7 +1483,7 @@ div.edit-category .edit-category-nav .nav-stacked,
 .discourse-no-touch .c-footer__item:focus .d-button-label,
 .discourse-touch .c-footer__item:focus .d-icon,
 .discourse-touch .c-footer__item:focus .d-button-label {
-  color: var(--seqera-deep-green);
+  color: var(--seqera-brand-green);
 }
 
 /* MOBILE VIEW */
