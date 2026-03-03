@@ -14,18 +14,22 @@
   /*   SQR vars   */
   --base-font: "Inter";
   --heading-font: "Degular";
-  --color-brand: #3498db;
+  --color-brand: #31C9AC;
   --grey-neutral-white: #fff;
-  --sqr-econdary: #2980b9;
-  --primary-300: #3498db;
-  --tertiary-800: #3877e5;
-  --seqera-black: #160f26;
+  --primary-300: #86E0CE;
+  --tertiary-800: #087f68;
+  --seqera-black: #201637;
   --seqera-grey-bg: #e8e7e9;
-  --seqera-blue-primary: #4256e7;
+  --seqera-brand-green: #31C9AC;
+  --seqera-soft-green: #e2f7f3;
+  --seqera-deep-green: #087f68;
+  --seqera-brand-dark:#201637;
 
   /* Overwritting*/
   --primary-high-or-secondary-low: #160f26;
   --tertiary-high: #160f26;
+
+  
 }
 
 body {
@@ -44,12 +48,12 @@ code > * {
 }
 
 a {
-  color: var(--seqera-blue-primary);
+  color: var(--seqera-deep-green);
   &:visited {
-    color: var(--seqera-blue-primary);
+    color: var(--seqera-deep-green);
   }
   &:hover {
-    color: #2c3999;
+    color: #065647;
   }
 }
 h1,
@@ -84,7 +88,7 @@ a.title {
 .btn-large,
 .btn-small {
   border-radius: 4px;
-  border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  border: 0.5px solid #201637;
   background: var(--Grey-neutral-white, #fff);
   &:hover {
     border-radius: 4px;
@@ -343,7 +347,7 @@ nav.post-controls .actions button {
 // .select-kit.combo-box.category-drop .category-drop-header[data-value=""]
 {
   border-radius: 4px;
-  border: 0.5px solid var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  border: 0.5px solid #201637;
   background: var(--Grey-neutral-white, #fff);
   text-transform: capitalize;
   color: var(--seqera-black, #160f26);
@@ -960,7 +964,7 @@ nav.post-controls .actions .double-button button:last-child {
 .latest-topic-list .table-heading,
 .top-topic-list .table-heading,
 .topic-list-header {
-  color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  color: #201637;
   font-family: Degular;
   font-size: 16px;
   font-style: normal;
@@ -985,7 +989,7 @@ tbody {
 .top-topic-list .posts-map,
 .topic-list .num .badge-posts,
 .topic-list td {
-  color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  color: #201637;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -997,7 +1001,7 @@ tbody {
   min-width: 145px;
 }
 .latest-topic-list-item .topic-last-activity a {
-  color: var(--Brand-Seqera-brand-Seqera-brand, #160f26);
+  color: #201637;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1478,7 +1482,7 @@ div.edit-category .edit-category-nav .nav-stacked,
 .discourse-no-touch .c-footer__item:focus .d-button-label,
 .discourse-touch .c-footer__item:focus .d-icon,
 .discourse-touch .c-footer__item:focus .d-button-label {
-  color: var(--seqera-blue-primary);
+  color: var(--seqera-deep-green);
 }
 
 /* MOBILE VIEW */

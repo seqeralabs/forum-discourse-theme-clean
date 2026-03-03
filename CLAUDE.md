@@ -36,7 +36,7 @@ This is a standard Discourse theme structure:
 
 ## Key Customizations
 
-The theme uses Discourse's Plugin API (`withPluginApi`) for JS modifications and CSS custom properties for theming. Main CSS variables are defined in `:root` in common.scss with Seqera brand colors like `--seqera-black`, `--seqera-blue-primary`, and `--seqera-grey-bg`.
+The theme uses Discourse's Plugin API (`withPluginApi`) for JS modifications and CSS custom properties for theming. Main CSS variables are defined in `:root` in common.scss with Seqera brand colors like `--seqera-black`, `--seqera-brand-green`, and `--seqera-grey-bg`.
 
 ## Discourse Compatibility
 
